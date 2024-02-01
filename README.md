@@ -28,7 +28,7 @@ The WiFi Website Backend is designed to support the frontend of a WiFi-related w
    git clone git@github.com:mumbi58/backend-max.git
 ### 2. Change into the project directory:
 
-`cd wifi-website-backend`
+`cd backend-max`
 
 ### 3. Install dependencies:
 
