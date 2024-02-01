@@ -26,21 +26,26 @@ The WiFi Website Backend is designed to support the frontend of a WiFi-related w
 
    ```bash
    git clone https://github.com/yourusername/wifi-website-backend.git
+### 2. Change into the project directory:
 
- ### 2. Change into the project directory:
+`cd wifi-website-backend`
 
-cd wifi-website-backend
 ### 3. Install dependencies:
 
-bundle install
+`bundle install`
+
 ### 4. Set up the database configuration:
 
-Copy the config/database.yml.example file to config/database.yml and update the configuration according to your MySQL setup.
+Copy the `config/database.yml.example` file to `config/database.yml` and update the configuration according to your MySQL setup.
 
 ### 5. Run database migrations:
-rails db:migrate
-6. Start the Rails server:
-rails server
+
+`rails db:migrate`
+
+### 6. Start the Rails server:
+
+`rails s`
+
 
 # USAGE
 ## API Endpoints
@@ -81,7 +86,6 @@ Copy code
 ## Authentication
 
 This project utilizes bcrypt for secure password hashing during user authentication, enhancing password protection through its salting mechanismContributing
-<Explain how others can contribute to your project. Include guidelines for submitting issues or pull requests.>
 
 
 
