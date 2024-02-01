@@ -7,12 +7,16 @@ class ReviewsController < ApplicationController
     end
   
     def create
-      @review = current_user.reviews.new(review_params)
+      if current_user
+        @review = current_user.reviews.new(review_params)
   
-      if @review.save
-        render json: @review
+        if @review.save
+          render json: @review
+        else
+          render json: { error: @review.errors.full_messages }, status: :unprocessable_entity
+        end
       else
-        render json: { error: @review.errors.full_messages }, status: :unprocessable_entity
+        render json: { error: "User not found" }, status: :unprocessable_entity
       end
     end
   
