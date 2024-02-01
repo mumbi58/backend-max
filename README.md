@@ -25,7 +25,7 @@ The WiFi Website Backend is designed to support the frontend of a WiFi-related w
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/yourusername/wifi-website-backend.git
+   git clone git@github.com:mumbi58/backend-max.git
 ### 2. Change into the project directory:
 
 `cd wifi-website-backend`
